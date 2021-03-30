@@ -1,0 +1,12 @@
+com\bbc\automation\api\metaweather\location\LocationApi.class
+com\bbc\automation\stepdefinitions\WeatherForLocationAndDateSteps.class
+com\bbc\automation\api\metaweather\location\LocationDayResponse.class
+com\bbc\automation\api\metaweather\location\LocationResponse$Sources.class
+com\bbc\automation\api\metaweather\location\LocationDayApi.class
+com\bbc\automation\api\metaweather\location\LocationDayResponse$ConsolidatedWeather.class
+com\bbc\automation\runners\TestRunner.class
+com\bbc\automation\api\metaweather\location\LocationResponse$Parent.class
+com\bbc\automation\api\metaweather\location\LocationResponse.class
+com\bbc\automation\api\metaweather\location\LocationSearchResponse.class
+com\bbc\automation\api\metaweather\location\LocationSearchApi.class
+com\bbc\automation\api\metaweather\location\LocationResponse$ConsolidatedWeather.class

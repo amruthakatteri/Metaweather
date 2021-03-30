@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.bbc.automation.runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 3.673 sec <<< FAILURE!
+001 Verify the weather state for London for next few days(Weather for Location and Date)  Time elapsed: 2.33 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Mismatch between expected weather state and actual weather state  expected:<[Heavy Cloud]> but was:<[Clear]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at com.bbc.automation.stepdefinitions.WeatherForLocationAndDateSteps.i_verify_the_weather_forecast_for_for_today_is(WeatherForLocationAndDateSteps.java:27)
+	at ?.I verify the weather forecast for 'London' for Today is 'Heavy Cloud'(file:///C:/ta/SolutionWorkspace/Features/WeatherForLocationAndDate.feature:10)
+
