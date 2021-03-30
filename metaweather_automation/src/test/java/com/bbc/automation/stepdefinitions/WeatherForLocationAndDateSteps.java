@@ -22,7 +22,7 @@ public class WeatherForLocationAndDateSteps {
 			if(response.consolidated_weather.length > 0)
 			{
 				actualWeatherStateName = response.consolidated_weather[0].weather_state_name;
-				
+
 			}
 			assertEquals("Mismatch between expected weather state and actual weather state ",expectedWeatherStateName, actualWeatherStateName);
 		}
@@ -41,7 +41,7 @@ public class WeatherForLocationAndDateSteps {
 			if(response.consolidated_weather.length > 0)
 			{
 				actualWeatherStateName = response.consolidated_weather[0].weather_state_name;
-				
+
 			}
 			assertEquals("Mismatch between expected weather state and actual weather state ",expectedWeatherStateName, actualWeatherStateName);
 		}
@@ -63,4 +63,26 @@ public class WeatherForLocationAndDateSteps {
 			Assert.fail("Invalid city name : " + cityName);
 	}
 
+	@When("I verify multiple WOEIDs are returned if the city name is {string}")
+	public void i_verify_multiple_woei_ds_are_returned_if_the_city_name_is(String cityName) {
+		int expectedResponse = -1;
+		int actualresponse = LocationSearchApi.GetWOEIDForLocation(cityName);
+		assertEquals("Multiple WOEIDs are not returned",expectedResponse, actualresponse);    
+	}
+
+	@When("I verify WOEID is not returned for invalid city {string}")
+	public void i_verify_woeid_is_not_returned_for_invalid_city(String cityName)
+	{
+		int expectedResponse = -2;
+		int actualresponse = LocationSearchApi.GetWOEIDForLocation(cityName);
+		assertEquals("Woeid is returned for invalid city name",expectedResponse, actualresponse);
+	}
+
+	@When("I verify WOEID is returned if the city name is {string} which occurs as a substring in many city names.")
+	public void i_verify_woei_ds_are_returned_if_the_city_name_is_which_occurs_as_a_substring_in_many_city_names(String cityName)
+	{
+		int expectedResponse = -3;
+		int actualresponse = LocationSearchApi.GetWOEIDForLocation(cityName);
+		assertEquals("Multiple WOEIDs are not returned",expectedResponse, actualresponse);  
+	}
 }

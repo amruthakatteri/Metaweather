@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="1" name="com.bbc.automation.runners.TestRunner" time="2.964" errors="0" skipped="0">
+<testsuite tests="5" failures="1" name="com.bbc.automation.runners.TestRunner" time="4.223" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\bin"/>
     <property name="java.vm.version" value="25.271-b09"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\ta\SolutionWorkspace"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\amrutha.katteri\git\Metaweather\metaweather_automation"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\ta\SolutionWorkspace"/>
+    <property name="user.dir" value="C:\Users\amrutha.katteri\git\Metaweather\metaweather_automation"/>
     <property name="java.runtime.version" value="1.8.0_271-b09"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\endorsed"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\amrutha.katteri\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3156767148806905616.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\amrutha.katteri\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf10028372122991177085.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_271\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Users/amrutha.katteri/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932/jre/bin/server;C:/Users/amrutha.katteri/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_14.0.2.v20200815-0932/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Users\amrutha.katteri\nunit-console-3.11.1\nunit-console-3.11.1;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files (x86)\Windows Kits\10\Microsoft Application Virtualization\Sequencer\;C:\Program Files\Git\cmd;C:\Users\amrutha.katteri\AppData\Local\Microsoft\WindowsApps;C:\Users\amrutha.katteri\AppData\Roaming\npm;C:\Users\amrutha.katteri\AppData\Local\Programs\Fiddler;C:\Users\amrutha.katteri\.dotnet\tools;C:\Users\amrutha.katteri\AppData\Local\atom\bin;C:\Users\amrutha.katteri\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -53,7 +53,7 @@
     <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_271\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_271\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_271\jre\classes"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\ta\SolutionWorkspace\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\amrutha.katteri\git\Metaweather\metaweather_automation\EMBEDDED"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -61,12 +61,28 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Weather for Location and Date" name="001 Verify the weather state for London for next few days" time="2.33">
+  <testcase classname="Weather for Location and Date" name="001 Verify the weather state for London for next few days" time="2.507">
     <failure message="Mismatch between expected weather state and actual weather state  expected:&lt;[Heavy Cloud]&gt; but was:&lt;[Clear]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: Mismatch between expected weather state and actual weather state  expected:&lt;[Heavy Cloud]&gt; but was:&lt;[Clear]&gt;
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at com.bbc.automation.stepdefinitions.WeatherForLocationAndDateSteps.i_verify_the_weather_forecast_for_for_today_is(WeatherForLocationAndDateSteps.java:27)
-	at ✽.I verify the weather forecast for &apos;London&apos; for Today is &apos;Heavy Cloud&apos;(file:///C:/ta/SolutionWorkspace/Features/WeatherForLocationAndDate.feature:10)
+	at ✽.I verify the weather forecast for &apos;London&apos; for Today is &apos;Heavy Cloud&apos;(file:///C:/Users/amrutha.katteri/git/Metaweather/metaweather_automation/Features/WeatherForLocationAndDate.feature:10)
 </failure>
+    <system-out>
+@FunctionalTest @RegressionTest
+Scenario: 001 Verify the weather state for London for next few days                     # Features/WeatherForLocationAndDate.feature:9
+  When I verify the weather forecast for &apos;London&apos; for Today is &apos;Heavy Cloud&apos;            # com.bbc.automation.stepdefinitions.WeatherForLocationAndDateSteps.i_verify_the_weather_forecast_for_for_today_is(java.lang.String,java.lang.String)
+      org.junit.ComparisonFailure: Mismatch between expected weather state and actual weather state  expected:&lt;[Heavy Cloud]&gt; but was:&lt;[Clear]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at com.bbc.automation.stepdefinitions.WeatherForLocationAndDateSteps.i_verify_the_weather_forecast_for_for_today_is(WeatherForLocationAndDateSteps.java:27)
+	at âœ½.I verify the weather forecast for &apos;London&apos; for Today is &apos;Heavy Cloud&apos;(file:///C:/Users/amrutha.katteri/git/Metaweather/metaweather_automation/Features/WeatherForLocationAndDate.feature:10)
+
+  And I verify the weather forecast for &apos;London&apos; for 1 days from Today is &apos;Showers&apos;     # com.bbc.automation.stepdefinitions.WeatherForLocationAndDateSteps.i_verify_the_weather_forecast_for_for_date_days_from_today_is(java.lang.String,int,java.lang.String)
+  And I verify the weather forecast for &apos;London&apos; for 2 days from Today is &apos;Clear&apos;       # com.bbc.automation.stepdefinitions.WeatherForLocationAndDateSteps.i_verify_the_weather_forecast_for_for_date_days_from_today_is(java.lang.String,int,java.lang.String)
+  And I verify the weather forecast for &apos;London&apos; for 3 days from Today is &apos;Light Cloud&apos; # com.bbc.automation.stepdefinitions.WeatherForLocationAndDateSteps.i_verify_the_weather_forecast_for_for_date_days_from_today_is(java.lang.String,int,java.lang.String)
+</system-out>
   </testcase>
-  <testcase classname="Weather for Location and Date" name="002 Verify weather forecast is available for London for next n number of days" time="0.634"/>
+  <testcase classname="Weather for Location and Date" name="002 Verify weather forecast is available for London for next n number of days" time="1.211"/>
+  <testcase classname="Weather for Location and Date" name="003 Verify multiple WOEIDs are returned corresponding to cities with same name in different locations (eg:Manchester)" time="0.157"/>
+  <testcase classname="Weather for Location and Date" name="004 Verify WOEID not returned for invalid city" time="0.153"/>
+  <testcase classname="Weather for Location and Date" name="005 Verify whether WOEID is returned for an invalid cityname which occurs as a substring in many valid city names(eg: Don)" time="0.195"/>
 </testsuite>
