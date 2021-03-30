@@ -18,4 +18,7 @@ Feature: Weather for Location and Date
   @SmokeTest
   Scenario: 002 Verify weather forecast is available for London for next n number of days 
     When I verify the 6 days weather forecast including Today is returned for 'London'
+    
+    @RegressionTest
+    Scenario: 003 Verify woeid not returned for invalid city 
    
